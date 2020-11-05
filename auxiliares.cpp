@@ -12,6 +12,13 @@ vector<posicion> ordenar(vector<posicion> &v) {
     return v;
 }
 
+// columnas
+int columnas(toroide t){
+    return (t.size() > 0? t[0].size() : 0);
+}
+
+//
+
 bool esRectangulo(toroide t){
     for (int i = 0; i < t.size(); i++){
 
