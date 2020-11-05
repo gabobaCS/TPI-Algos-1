@@ -1,11 +1,12 @@
 #include <algorithm>
 #include "ejercicios.h"
+#include "auxiliares.h"
 
 // EJERCICIO 1
 bool toroideValido(vector<vector<bool>> const &t) {
-    bool resp = false; // este valor puede ser cambiado de acuerdo a la propia implementacion
-    // Implementacion
-    return resp;
+//    bool resp = false; // este valor puede ser cambiado de acuerdo a la propia implementacion
+//    // Implementacion
+    return esToroide(t);
 }
 
 // EJERCICIO 2

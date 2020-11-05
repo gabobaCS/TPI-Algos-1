@@ -15,3 +15,5 @@ vector<posicion> ordenar(vector<posicion> &v);
 
 // columnas
 int columnas(toroide t);
+bool esRectangulo(toroide t);
+bool esToroide(toroide t);
