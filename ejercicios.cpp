@@ -12,6 +12,7 @@ bool toroideValido(vector<vector<bool>> const &t) {
 vector<posicion> posicionesVivas(toroide const &t) {
 	vector<posicion> vivos;
     // Implementacion
+    int i =0;
     return vivos;
 }
 
