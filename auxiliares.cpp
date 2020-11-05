@@ -14,7 +14,7 @@ vector<posicion> ordenar(vector<posicion> &v) {
 
 // columnas
 int columnas(toroide t){
-    return (t.size() > 0? t[0].size() : 0);
+    return (t.size() > 0 ? t[0].size() : 0);
 }
 
 bool esRectangulo(toroide t){
@@ -26,5 +26,5 @@ bool esRectangulo(toroide t){
 }
 
 bool esToroide(toroide t){
-    return esRectangulo(t) && t.size()>=3 && columnas(t)>=3;
+    return (esRectangulo(t) && t.size()>=3 && columnas(t)>=3);
 }
