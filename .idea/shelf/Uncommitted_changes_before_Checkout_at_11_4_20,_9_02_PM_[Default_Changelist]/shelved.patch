@@ -1,0 +1,21 @@
+Index: auxiliares.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include \"definiciones.h\"\n#include \"auxiliares.h\"\n\nusing namespace std;\n// aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios\npair<int,int> mp(int a, int b) {\n    return make_pair(a, b);\n}\n\nvector<posicion> ordenar(vector<posicion> &v) {\n    sort(v.begin(), v.end());\n    return v;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- auxiliares.cpp	(revision e35cd0fc2929f65a89063af10a309b8171fc608c)
++++ auxiliares.cpp	(date 1604534516612)
+@@ -11,3 +11,10 @@
+     sort(v.begin(), v.end());
+     return v;
+ }
++
++// columnas
++int columnas(toroide t){
++    return (t.size() > 0? t[0].size() : 0);
++}
++
++//
+\ No newline at end of file

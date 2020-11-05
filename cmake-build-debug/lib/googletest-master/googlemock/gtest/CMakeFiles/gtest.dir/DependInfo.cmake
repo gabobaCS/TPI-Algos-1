@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/lib/googletest-master/googletest/src/gtest-all.cc" "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+  "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/lib/googletest-master/googletest/src/gtest-all.cc" "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

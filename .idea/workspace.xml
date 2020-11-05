@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="juegoDeLaVida" targetName="gmock" />
+      <config projectName="juegoDeLaVida" targetName="juegoDeLaVida" />
+      <config projectName="juegoDeLaVida" targetName="gmock_main" />
+      <config projectName="juegoDeLaVida" targetName="gtest_main" />
+      <config projectName="juegoDeLaVida" targetName="gtest" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a162d016-79c6-434b-b038-5b7503d27ebf" name="Default Changelist" comment="enRango y enRangoToroide&#10;&#10;# Conflicts:&#10;#&#9;.idea/modules.xml&#10;#&#9;cmake-build-debug/CMakeCache.txt&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeOutput.log&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile2&#10;#&#9;cmake-build-debug/CMakeFiles/TargetDirectories.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-environment.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-log.txt&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt&#10;#&#9;cmake-build-debug/Makefile&#10;#&#9;cmake-build-debug/cmake_install.cmake&#10;#&#9;cmake-build-debug/gmock.pc&#10;#&#9;cmake-build-debug/gmock_main.pc&#10;#&#9;cmake-build-debug/gtest.pc&#10;#&#9;cmake-build-debug/gtest_main.pc&#10;#&#9;cmake-build-debug/juegoDeLaVida.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/googletest-distribution.cbp">
+      <change afterPath="$PROJECT_DIR$/.idea/TPI-Algos-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_20,_9_02_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_20__9_02_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_20,_9_33_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_20,_9_35_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_20,_9_35_PM_[Default_Changelist]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_20__9_33_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_20__9_35_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_20__9_35_PM__Default_Changelist_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxiliares.h" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gmock.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/gmock.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gmock_main.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/gmock_main.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gtest.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/gtest.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/gtest_main.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/gtest_main.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/juegoDeLaVida.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/juegoDeLaVida.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1jqWXdWI0uduM98H8XPHhHcgdHA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Google Test.juegoDeLaVida">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="juegoDeLaVida" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="juegoDeLaVida" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="juegoDeLaVida" RUN_TARGET_NAME="juegoDeLaVida" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="juegoDeLaVida" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="Google Test.juegoDeLaVida" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a162d016-79c6-434b-b038-5b7503d27ebf" name="Default Changelist" comment="" />
+      <created>1604532143462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604532143462</updated>
+      <workItem from="1604532145011" duration="5000" />
+      <workItem from="1604532389446" duration="6133000" />
+    </task>
+    <task id="LOCAL-00001" summary="aca puse en la linea 8 una asignacion">
+      <created>1604532724368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604532724368</updated>
+    </task>
+    <task id="LOCAL-00002" summary="nueva tarea">
+      <created>1604534645123</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604534645123</updated>
+    </task>
+    <task id="LOCAL-00003" summary="columnas">
+      <created>1604534924752</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604534924752</updated>
+    </task>
+    <task id="LOCAL-00004" summary="enRango y enRangoToroide">
+      <created>1604538075739</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604538075739</updated>
+    </task>
+    <task id="LOCAL-00005" summary="enRango y enRangoToroide">
+      <created>1604538335833</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604538335833</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aca puse en la linea 8 una asignacion" />
+    <MESSAGE value="nueva tarea" />
+    <MESSAGE value="columnas" />
+    <MESSAGE value="enRango y enRangoToroide" />
+    <MESSAGE value="enRango y enRangoToroide&#10;&#10;# Conflicts:&#10;#&#9;.idea/modules.xml&#10;#&#9;cmake-build-debug/CMakeCache.txt&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeOutput.log&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile2&#10;#&#9;cmake-build-debug/CMakeFiles/TargetDirectories.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-environment.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-log.txt&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt&#10;#&#9;cmake-build-debug/Makefile&#10;#&#9;cmake-build-debug/cmake_install.cmake&#10;#&#9;cmake-build-debug/gmock.pc&#10;#&#9;cmake-build-debug/gmock_main.pc&#10;#&#9;cmake-build-debug/gtest.pc&#10;#&#9;cmake-build-debug/gtest_main.pc&#10;#&#9;cmake-build-debug/juegoDeLaVida.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" />
+    <option name="LAST_COMMIT_MESSAGE" value="enRango y enRangoToroide&#10;&#10;# Conflicts:&#10;#&#9;.idea/modules.xml&#10;#&#9;cmake-build-debug/CMakeCache.txt&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeOutput.log&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile2&#10;#&#9;cmake-build-debug/CMakeFiles/TargetDirectories.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-environment.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-log.txt&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/build.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/depend.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/flags.make&#10;#&#9;cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/link.txt&#10;#&#9;cmake-build-debug/Makefile&#10;#&#9;cmake-build-debug/cmake_install.cmake&#10;#&#9;cmake-build-debug/gmock.pc&#10;#&#9;cmake-build-debug/gmock_main.pc&#10;#&#9;cmake-build-debug/gtest.pc&#10;#&#9;cmake-build-debug/gtest_main.pc&#10;#&#9;cmake-build-debug/juegoDeLaVida.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/link.txt&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake&#10;#&#9;cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp&#10;#&#9;cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1604538498346">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1604538498346" />
+    <state x="100" y="100" width="495" height="600" key="DiffContextDialog" timestamp="1604536908057">
+      <screen x="0" y="23" width="1280" height="710" />
+    </state>
+    <state x="100" y="100" width="495" height="600" key="DiffContextDialog/0.23.1280.710@0.23.1280.710" timestamp="1604536908057" />
+    <state x="74" y="22" key="MergeDialog" timestamp="1604538600428">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="74" y="22" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1604538600428" />
+    <state x="86" y="122" width="1076" height="463" key="MultipleFileMergeDialog" timestamp="1604538759744">
+      <screen x="0" y="23" width="1280" height="710" />
+    </state>
+    <state x="71" y="153" width="1076" height="463" key="MultipleFileMergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1604538604186" />
+    <state x="86" y="122" key="MultipleFileMergeDialog/0.23.1280.710@0.23.1280.710" timestamp="1604538759744" />
+    <state x="103" y="109" key="Vcs.Push.Dialog.v2" timestamp="1604538510080">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="103" y="109" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1604538510080" />
+    <state x="145" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604538293827">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="145" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1604538293827" />
+    <state x="11" y="120" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604534549157">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="11" y="120" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.800@0.0.1280.800" timestamp="1604534549157" />
+  </component>
+</project>

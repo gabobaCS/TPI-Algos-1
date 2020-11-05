@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/lib/googletest-master/googletest
+# Install script for directory: /Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/lib/googletest-master/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/juegoDeLaVida")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,21 +33,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgtestd.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgtestd.a")
+    execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgtestd.a")
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgtest_maind.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgtest_maind.a")
+    execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgtest_maind.a")
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/lib/googletest-master/googletest/include/gtest")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/lib/googletest-master/googletest/include/gtest")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
-    "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/cmake-build-debug/gtest.pc"
-    "C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/cmake-build-debug/gtest_main.pc"
+    "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/cmake-build-debug/gtest.pc"
+    "/Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/cmake-build-debug/gtest_main.pc"
     )
 endif()
 
