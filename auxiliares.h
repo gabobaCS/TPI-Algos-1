@@ -12,3 +12,6 @@ pair<int,int> mp(int a, int b);
 vector<posicion> ordenar(vector<posicion> &v);
 
 #endif //REUNIONESREMOTAS_AUXILIARES_H
+
+// columnas
+int columnas(toroide t);

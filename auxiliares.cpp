@@ -11,3 +11,10 @@ vector<posicion> ordenar(vector<posicion> &v) {
     sort(v.begin(), v.end());
     return v;
 }
+
+// columnas
+int columnas(toroide t){
+    return (t.size() > 0? t[0].size() : 0);
+}
+
+//
