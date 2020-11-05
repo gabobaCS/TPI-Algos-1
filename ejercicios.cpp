@@ -28,13 +28,22 @@ float densidadPoblacion(toroide const &t) {
 // EJERCICIO 4
 bool evolucionDePosicion(toroide const &t, posicion x) {
 	bool resp = false;
-    // Implementacion
+	if (t[x.first][x.second] == true){
+	    if (2 <= vecinosVivos(t, x.first, x.second) <= 3) resp = true;
+	} else {
+        if (vecinosVivos(t, x.first, x.second) == 3) resp = true;
+    }
     return resp;
 }
 
 // EJERCICIO 5
 void evolucionToroide(toroide &t){
-    // Implementacions
+    toroide t0 = t;
+    for (int i = 0; i < t0.size(); i++){
+        for (int j = 0; j < columnas(t0); j++) {
+            t[i][j] = evolucionDePosicion(t0, make_pair(i,j));
+        }
+    }
     return;
 }
 

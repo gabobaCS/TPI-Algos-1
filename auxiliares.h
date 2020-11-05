@@ -21,3 +21,6 @@ bool esRectangulo(toroide t);
 
 // esToroide
 bool esToroide(toroide t);
+
+// cantidadVivas
+int vecinosVivos(toroide t, int f, int c);
