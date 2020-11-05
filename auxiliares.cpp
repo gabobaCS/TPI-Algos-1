@@ -14,17 +14,17 @@ vector<posicion> ordenar(vector<posicion> &v) {
 
 // columnas
 int columnas(toroide t){
-    return (t.size() > 0 ? t[0].size() : 0);
+    return (t.size() > 0? t[0].size() : 0);
 }
 
 bool esRectangulo(toroide t){
     bool res = true;
     for (int i = 0; i < t.size(); i++){
-        if (t[0].size() != t[i].size()) res = false;
+        if (t[0] != t[i]) res = false;
     }
-    return (t.size() > 0 && columnas(t) > 0 && res);
+    return (t.size() > 0 && columnas(t) && res);
 }
 
 bool esToroide(toroide t){
-    return (esRectangulo(t) && t.size()>=3 && columnas(t)>=3);
+    return esRectangulo(t) && t.size()>=3 && columnas(t)>=3;
 }
