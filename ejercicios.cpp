@@ -5,22 +5,23 @@
 // EJERCICIO 1
 bool toroideValido(vector<vector<bool>> const &t) {
 //    bool resp = false; // este valor puede ser cambiado de acuerdo a la propia implementacion
-//    // Implementacion
     return esToroide(t);
 }
 
 // EJERCICIO 2
 vector<posicion> posicionesVivas(toroide const &t) {
 	vector<posicion> vivos;
-    // Implementacion
-    int i =0;
+    for(int i = 0; i < t.size(); i++){
+        for (int j = 0; j < t[0].size(); j++){
+            if (t[i][j])  vivos.push_back(make_pair(i,j));
+        }
+    }
     return vivos;
 }
 
 // EJERCICIO 3
 float densidadPoblacion(toroide const &t) {
-	float resp = -1;
-    // Implementacion
+	float resp = posicionesVivas(t).size()/(t[0].size()*t.size());
     return resp;
 }
 

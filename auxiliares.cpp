@@ -20,9 +20,9 @@ int columnas(toroide t){
 bool esRectangulo(toroide t){
     bool res = true;
     for (int i = 0; i < t.size(); i++){
-        if (t[0] != t[i]) res = false;
+        if (t[0].size() != t[i].size()) res = false;
     }
-    return (t.size() > 0 && columnas(t) && res);
+    return (t.size() > 0 && columnas(t) > 0 && res);
 }
 
 bool esToroide(toroide t){
