@@ -28,10 +28,11 @@ float densidadPoblacion(toroide const &t) {
 // EJERCICIO 4
 bool evolucionDePosicion(toroide const &t, posicion x) {
 	bool resp = false;
+	int cantVivos = vecinosVivos(t, x.first, x.second);
 	if (t[x.first][x.second] == true){
-	    if (2 <= vecinosVivos(t, x.first, x.second) <= 3) resp = true;
+	    if (2 <= cantVivos && cantVivos <= 3) resp = true;
 	} else {
-        if (vecinosVivos(t, x.first, x.second) == 3) resp = true;
+        if (cantVivos == 3) resp = true;
     }
     return resp;
 }
@@ -49,29 +50,52 @@ void evolucionToroide(toroide &t){
 
 // EJERCICIO 6
 toroide evolucionMultiple(toroide const &t, int K) {
-    toroide out;
-    // Implementacion
+    toroide out = t;
+    for (int ticks = 0; ticks < K; ticks++){
+        evolucionToroide(out);
+    }
     return out;
 }
 
 // EJERCICIO 7
 bool esPeriodico(toroide const &t, int &p) {
     bool resp = false;
-    // Implementacion
+    toroide evolucion = t;
+    evolucionToroide(evolucion);
+    int ticks = 1; // el codigo de arriba ya es un tick
+    while(evolucion != t && !esToroideMuerto(evolucion)){
+        evolucionToroide(evolucion);
+        ticks += 1;
+    }
+    if (t == evolucion){
+        resp = true;
+        p = ticks;
+    }
     return resp;
 }
 
 // EJERCICIO 8
 bool primosLejanos(toroide const &t, toroide const &u) {
-	bool resp = false; 
-    // Implementacion
+	bool resp = false;
+    int k = 1;
+	bool ningunoEsPeriodico = evolucionMultiple(t, k) != t && evolucionMultiple(u, k) != u;
+	bool ningunoMuere = !esToroideMuerto(evolucionMultiple(t, k)) && !esToroideMuerto(evolucionMultiple(u, k));
+    while(ningunoEsPeriodico && ningunoMuere && !resp){
+        if (evolucionMultiple(t, k) == t || evolucionMultiple(u, k) == u){
+            resp = true;
+        } else {
+            k++;
+        }
+    }
     return resp;
 }
 
 // EJERCICIO 9
 int seleccionNatural(vector <toroide> ts) {
     int resp = -1; // este valor puede ser cambiado de acuerdo a la propia implementacion    
-	// Implementacion
+    vector<int> cantTicksHastaQueMuere = ticksHastaMorir(ts); // la pre dice que todos mueren
+
+
     return resp;
 }
 
