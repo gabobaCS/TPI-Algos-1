@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <iostream>
 #include "ejercicios.h"
 #include "auxiliares.h"
 
@@ -29,8 +30,8 @@ float densidadPoblacion(toroide const &t) {
 bool evolucionDePosicion(toroide const &t, posicion x) {
 	bool resp = false;
 	int cantVivos = vecinosVivos(t, x.first, x.second);
-	if (t[x.first][x.second] == true){
-	    if (2 <= cantVivos && cantVivos <= 3) resp = true;
+	if (t[x.first][x.second]){
+	    if (2 <= cantVivos && cantVivos <= 3) resp = true; //Cant vivos = 2 o 3
 	} else {
         if (cantVivos == 3) resp = true;
     }
@@ -92,30 +93,47 @@ bool primosLejanos(toroide const &t, toroide const &u) {
 
 // EJERCICIO 9
 int seleccionNatural(vector <toroide> ts) {
-    int resp = -1; // este valor puede ser cambiado de acuerdo a la propia implementacion    
-    vector<int> cantTicksHastaQueMuere = ticksHastaMorir(ts); // la pre dice que todos mueren
+//    int resp = -1; // este valor puede ser cambiado de acuerdo a la propia implementacion
+//    vector<int> cantTicksHastaQueMuere = ticksHastaMorir(ts); // la pre dice que todos mueren
 
 
-    return resp;
+//    return resp;
 }
 
 // EJERCICIO 10
 toroide fusionar(toroide const &t, toroide const &u) {
     toroide out;
-    // Implementacion
+    for (int i = 0; i < t.size(); i++){
+        vector<bool> filaActual;
+        for (int j = 0; j < t[0].size(); j++){
+            filaActual.push_back(t[i][j] && u[i][j]);
+        }
+        out.push_back(filaActual);
+    }
     return out;
 }
 
 // EJERCICIO 11
 bool vistaTrasladada(toroide const &t, toroide const &u){
 	bool resp = false;
-    // Implementacion
+    for (int i = 0; i <= t.size(); i++){
+        for (int j = 0; j <= t[0].size(); j++){
+            if (esTraslacion(t,u,i,j)) resp = true;
+        }
+    }
     return resp;
 }
 
 // EJERCICIO 12
 int menorSuperficieViva(toroide const &t){
 	int resp = -1;
-	// Implementacion
+	int minArea = 0;
+	for(int i = 0; i < t.size(); i++){
+	    for(int j = 0; j <t[0].size(); j++){
+	        toroide trasladado = hacerTraslacion(t, i, j);
+
+	    }
+	}
+
 	return resp;
 }

@@ -28,3 +28,17 @@ int modulo(int n, int m);
 int vecinosVivos(toroide t, int f, int c);
 
 bool esToroideMuerto(toroide t);
+
+bool esTraslacion(toroide const &t, toroide const &u, int x, int y);
+
+toroide hacerTraslacion(toroide t, int y, int x);
+
+int cantidadDeVivas(toroide t);
+
+void imprimirToroide(toroide t);
+
+toroide extraerRect(toroide t, int esq1, int esq2);
+
+vector<toroide> todosLosSubRect(toroide t);
+
+vector<int> listaDeAreas(vector<toroide> toroides);

@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libgtest_maind.a  CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libgtest_maind.a
+C:\PROGRA~1\HASKEL~1\86E4AC~1.5\mingw\bin\ar.exe qc libgtest_maind.a  CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
+C:\PROGRA~1\HASKEL~1\86E4AC~1.5\mingw\bin\ranlib.exe libgtest_maind.a

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/lib/googletest-master/googlemock
-# Build directory: /Users/juaniponce/Desktop/DocsJuan/Algoritmos y Estructura de datos I/TPI/TPI-Algos-1/cmake-build-debug/lib/googletest-master/googlemock
+# Source directory: C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/lib/googletest-master/googlemock
+# Build directory: C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/cmake-build-debug/lib/googletest-master/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
