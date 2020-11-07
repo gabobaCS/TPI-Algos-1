@@ -4,6 +4,7 @@
 CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: ../auxiliares.cpp
 CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: ../auxiliares.h
 CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: ../definiciones.h
+CMakeFiles/juegoDeLaVida.dir/auxiliares.obj: ../ejercicios.h
 
 CMakeFiles/juegoDeLaVida.dir/ejercicios.obj: ../auxiliares.h
 CMakeFiles/juegoDeLaVida.dir/ejercicios.obj: ../definiciones.h

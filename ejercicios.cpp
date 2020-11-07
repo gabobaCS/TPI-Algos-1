@@ -31,7 +31,7 @@ bool evolucionDePosicion(toroide const &t, posicion x) {
 	bool resp = false;
 	int cantVivos = vecinosVivos(t, x.first, x.second);
 	if (t[x.first][x.second]){
-	    if (2 <= cantVivos && cantVivos <= 3) resp = true; //Cant vivos = 2 o 3
+	    if (2 <= cantVivos && cantVivos <= 3) resp = true;
 	} else {
         if (cantVivos == 3) resp = true;
     }
@@ -131,6 +131,7 @@ int menorSuperficieViva(toroide const &t){
 	for(int i = 0; i < t.size(); i++){
 	    for(int j = 0; j <t[0].size(); j++){
 	        toroide trasladado = hacerTraslacion(t, i, j);
+	        vector<toroide>
 
 	    }
 	}

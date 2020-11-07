@@ -1,6 +1,7 @@
 #include <iostream>
 #include "definiciones.h"
 #include "auxiliares.h"
+#include "ejercicios.h"
 
 using namespace std;
 // aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios
@@ -127,14 +128,20 @@ toroide extraerRect(toroide t, int esq1, int esq2){
     return rect;
 }
 
-vector<toroide> todosLosSubRect(toroide t){
+vector<toroide> SubrectsConVivas(toroide t){
+    //Devuelve una secuencia de los rectangulos de t que contienen todas las vivas.
     vector<toroide> rectangulos;
     for (int i = 0; i < t.size(); i++){
         for (int j = 0; j < t[0].size(); j++){
-            rectangulos.push_back(extraerRect(t, i, j));
+            toroide rect = extraerRect(t,i,j);
+            if (posicionesVivas(rect).size() ==  posicionesVivas(t).size())
+                rectangulos.push_back(rect);
         }
     }
 }
+
+//vector<toroide>
+
 
 vector<int> listaDeAreas(vector<toroide> toroides){
     vector<int> areas;
