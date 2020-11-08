@@ -124,17 +124,25 @@ bool vistaTrasladada(toroide const &t, toroide const &u){
     return resp;
 }
 
+void imprimirVector(vector<int> vec){
+    for (int i = 0; i < vec.size(); i++){
+        cout << vec[i] << " ";
+    }
+    cout << endl;
+}
+
 // EJERCICIO 12
 int menorSuperficieViva(toroide const &t){
-	int resp = -1;
-	int minArea = 0;
+	int resp = (t.size() * t[0].size());
 	for(int i = 0; i < t.size(); i++){
-	    for(int j = 0; j <t[0].size(); j++){
+	    for(int j = 0; j < t[0].size(); j++){
 	        toroide trasladado = hacerTraslacion(t, i, j);
-	        vector<toroide>
+	        vector<toroide> subrects = todosLosSubrect(trasladado);
+	        vector<toroide> conTodasVivas = subrectsConVivas(subrects,t);
+            if (minimaArea(conTodasVivas) < resp)
+                resp = minimaArea(conTodasVivas);
 
 	    }
 	}
-
 	return resp;
 }

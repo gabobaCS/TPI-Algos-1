@@ -37,8 +37,15 @@ int cantidadDeVivas(toroide t);
 
 void imprimirToroide(toroide t);
 
-toroide extraerRect(toroide t, int esq1, int esq2);
+toroide extraerRect(toroide t, int y1, int y2, int x1, int x2);
 
-vector<toroide> todosLosSubRect(toroide t);
+void imprimirTodosLosRect(toroide t);
 
-vector<int> listaDeAreas(vector<toroide> toroides);
+toroide hacerSubrect(toroide t, int y1, int y2, int x1, int x2);
+
+vector<toroide> todosLosSubrect(toroide t);
+
+vector<toroide> subrectsConVivas(vector<toroide> ts, toroide t);
+
+int minimaArea(vector<toroide> ts);
+
