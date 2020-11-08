@@ -42,3 +42,28 @@ TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
     int res = seleccionNatural(ts);
     EXPECT_EQ(res, 1);
 }
+
+TEST(seleccionNaturalTEST, case3){
+    toroide t1 = {
+            {false, false, false, false, false},
+            {false, false, false, false, false},
+            {false, true, true, true, false},
+            {false, false, false, false, false},
+            {false, false,false, false, false} };
+    toroide t2 = {
+            {true, false, false},
+            {false, true, false},
+            {false, false, true}};
+    toroide t3 = {
+            {false, true, true, false, false},
+            {false, true, false, false, false},
+            {false, true, true, false, false},
+            {false, false, false, false, false},
+            {false, false,false, false, false} };
+    vector<toroide> ts;
+    ts.push_back(t1);
+    ts.push_back(t2);
+    ts.push_back(t3);
+    int res = seleccionNatural(ts);
+    EXPECT_EQ(res, 2);
+}
