@@ -93,11 +93,12 @@ bool primosLejanos(toroide const &t, toroide const &u) {
 
 // EJERCICIO 9
 int seleccionNatural(vector <toroide> ts) {
-//    int resp = -1; // este valor puede ser cambiado de acuerdo a la propia implementacion
-//    vector<int> cantTicksHastaQueMuere = ticksHastaMorir(ts); // la pre dice que todos mueren
-
-
-//    return resp;
+    int resp = 0; // este valor puede ser cambiado de acuerdo a la propia implementacion
+    vector<int> vecTicks = ticksHastaMorir(ts); // la pre dice que todos mueren
+    for (int i = 1; i < vecTicks.size(); i++){
+        if (vecTicks[i] > vecTicks[resp]) resp = i;
+    }
+    return resp;
 }
 
 // EJERCICIO 10
@@ -131,8 +132,7 @@ int menorSuperficieViva(toroide const &t){
 	for(int i = 0; i < t.size(); i++){
 	    for(int j = 0; j <t[0].size(); j++){
 	        toroide trasladado = hacerTraslacion(t, i, j);
-	        vector<toroide>
-
+//	        vector<toroide>
 	    }
 	}
 
