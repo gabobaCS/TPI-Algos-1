@@ -40,7 +40,7 @@ TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
     ts.push_back(t1);
     ts.push_back(t2);
     int res = seleccionNatural(ts);
-    EXPECT_EQ(res, 1);
+    EXPECT_EQ(res, 0);
 }
 
 TEST(seleccionNaturalTEST, case3){
