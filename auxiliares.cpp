@@ -65,12 +65,22 @@ bool esToroideMuerto(toroide t){
 }
 
 vector<int> ticksHastaMorir(vector<toroide> ts){
-    vector<int> seqTicks(ts.size());
+    vector<int> seqTicks;
     int cantTicks = 0;
+    int p; // sin esto no puedo usar la funcion esPeriodico
     for (int i = 0; i < ts.size(); i++){
-
+        if (esPeriodico(ts[i], p)) {
+            seqTicks.push_back(-1);
+        } else {
+            while (!esToroideMuerto(ts[i])){
+                evolucionToroide(ts[i]);
+                cantTicks++;
+            }
+            seqTicks.push_back(cantTicks);
+            cantTicks = 0;
+        }
     }
-
+    return seqTicks;
 }
 
 bool esTraslacion(toroide const &t, toroide const &u, int y, int x){

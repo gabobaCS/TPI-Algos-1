@@ -24,6 +24,8 @@ bool esToroide(toroide t);
 
 int modulo(int n, int m);
 
+vector<int> ticksHastaMorir(vector<toroide> ts);
+
 // vecinosVivos
 int vecinosVivos(toroide t, int f, int c);
 
