@@ -15,7 +15,6 @@ vector<posicion> ordenar(vector<posicion> &v) {
     return v;
 }
 
-// columnas
 int columnas(toroide t){
     return (t.size() > 0? t[0].size() : 0);
 }
@@ -104,16 +103,6 @@ void imprimirToroide(toroide t){
         cout << endl;
     }
     cout << endl;
-}
-
-int cantidadDeVivas(toroide t){
-    int vivas = 0;
-    for (int i = 0; i < t.size(); i++){
-        for (int j = 0; j < t[0].size(); j++){
-            if (t[i][j]) vivas++;
-        }
-    }
-    return vivas;
 }
 
 toroide hacerTraslacion(toroide t, int y, int x){
