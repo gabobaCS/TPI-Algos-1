@@ -144,5 +144,6 @@ int menorSuperficieViva(toroide const &t){
 
 	    }
 	}
+
 	return resp;
 }
