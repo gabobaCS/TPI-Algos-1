@@ -1,0 +1,22 @@
+        -:    0:Source:C:/Users/PC/Desktop/Bernie/Gabo/UBA/Materias/Algos I/TPI-algos-1/auxiliares.cpp
+        -:    0:Graph:C:\Users\PC\Desktop\Bernie\Gabo\UBA\Materias\Algos I\TPI-algos-1\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcno
+        -:    0:Data:C:\Users\PC\Desktop\Bernie\Gabo\UBA\Materias\Algos I\TPI-algos-1\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\auxiliares.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "definiciones.h"
+        -:    2:#include "auxiliares.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:// aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios
+        6:    6:pair<int,int> mp(int a, int b) {
+        6:    6-block  0
+        6:    7:    return make_pair(a, b);
+        6:    7-block  0
+        -:    8:}
+        -:    9:
+        2:   10:vector<posicion> ordenar(vector<posicion> &v) {
+        2:   10-block  0
+        2:   11:    sort(v.begin(), v.end());
+        2:   11-block  0
+        2:   12:    return v;
+        -:   13:}

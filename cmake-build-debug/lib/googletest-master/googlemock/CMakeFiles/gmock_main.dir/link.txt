@@ -1,0 +1,2 @@
+C:\PROGRA~1\HASKEL~1\86E4AC~1.5\mingw\bin\ar.exe qc libgmock_maind.a  CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj
+C:\PROGRA~1\HASKEL~1\86E4AC~1.5\mingw\bin\ranlib.exe libgmock_maind.a

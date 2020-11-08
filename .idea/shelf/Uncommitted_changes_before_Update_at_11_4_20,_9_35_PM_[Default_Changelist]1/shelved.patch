@@ -1,0 +1,46 @@
+Index: auxiliares.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include \"definiciones.h\"\n#include \"auxiliares.h\"\n\nusing namespace std;\n// aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios\npair<int,int> mp(int a, int b) {\n    return make_pair(a, b);\n}\n\nvector<posicion> ordenar(vector<posicion> &v) {\n    sort(v.begin(), v.end());\n    return v;\n}\n\n// columnas\nint columnas(toroide t){\n    return (t.size() > 0? t[0].size() : 0);\n}\n\nbool esRectangulo(toroide t){\n    bool res = true;\n    for (int i = 0; i < t.size(); i++){\n        if (t[0] != t[i]) res = false;\n    }\n    return (t.size() > 0 && columnas(t) && res);\n}\n\nbool esToroide(toroide t){\n    return esRectangulo(t) && t.size()>=3 && columnas(t)>=3;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- auxiliares.cpp	(revision c8b6862b05fbef16242565bee5d66a1bbdd69801)
++++ auxiliares.cpp	(date 1604536528456)
+@@ -17,14 +17,4 @@
+     return (t.size() > 0? t[0].size() : 0);
+ }
+ 
+-bool esRectangulo(toroide t){
+-    bool res = true;
+-    for (int i = 0; i < t.size(); i++){
+-        if (t[0] != t[i]) res = false;
+-    }
+-    return (t.size() > 0 && columnas(t) && res);
+-}
+-
+-bool esToroide(toroide t){
+-    return esRectangulo(t) && t.size()>=3 && columnas(t)>=3;
+-}
+\ No newline at end of file
++//
+\ No newline at end of file
+Index: auxiliares.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//\n\n\n#ifndef REUNIONESREMOTAS_AUXILIARES_H\n#define REUNIONESREMOTAS_AUXILIARES_H\n\n#include \"definiciones.h\"\n\nusing namespace std;\n// definir aqui las funciones\npair<int,int> mp(int a, int b);\nvector<posicion> ordenar(vector<posicion> &v);\n\n#endif //REUNIONESREMOTAS_AUXILIARES_H\n\n// columnas\nint columnas(toroide t);\nbool esRectangulo(toroide t);\nbool esToroide(toroide t);
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- auxiliares.h	(revision c8b6862b05fbef16242565bee5d66a1bbdd69801)
++++ auxiliares.h	(date 1604536528457)
+@@ -15,5 +15,8 @@
+ 
+ // columnas
+ int columnas(toroide t);
++
++// enRango
++bool enRango(int i, vector<bool> s);
+ bool esRectangulo(toroide t);
+ bool esToroide(toroide t);
+\ No newline at end of file

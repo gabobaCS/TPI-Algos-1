@@ -1,0 +1,45 @@
+Index: auxiliares.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include \"definiciones.h\"\n#include \"auxiliares.h\"\n\nusing namespace std;\n// aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios\npair<int,int> mp(int a, int b) {\n    return make_pair(a, b);\n}\n\nvector<posicion> ordenar(vector<posicion> &v) {\n    sort(v.begin(), v.end());\n    return v;\n}\n\n// columnas\nint columnas(toroide t){\n    return (t.size() > 0? t[0].size() : 0);\n}\n\n//
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- auxiliares.cpp	(revision 782b2886b07af8fcf4d1e63c0d1fb59fb8b3e5ad)
++++ auxiliares.cpp	(date 1604536083674)
+@@ -17,4 +17,12 @@
+     return (t.size() > 0? t[0].size() : 0);
+ }
+ 
+-//
+\ No newline at end of file
++// enRango
++bool enRango(int i, vector<bool> s){
++    return (0 <= i < s.size());
++}
++
++// enRangoToroide
++bool enRangoToroide(int f, int c, toroide t){
++    return (enRango(f, t) && enRango(c, t[f]));
++}
+\ No newline at end of file
+Index: auxiliares.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//\n\n\n#ifndef REUNIONESREMOTAS_AUXILIARES_H\n#define REUNIONESREMOTAS_AUXILIARES_H\n\n#include \"definiciones.h\"\n\nusing namespace std;\n// definir aqui las funciones\npair<int,int> mp(int a, int b);\nvector<posicion> ordenar(vector<posicion> &v);\n\n#endif //REUNIONESREMOTAS_AUXILIARES_H\n\n// columnas\nint columnas(toroide t);
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- auxiliares.h	(revision 782b2886b07af8fcf4d1e63c0d1fb59fb8b3e5ad)
++++ auxiliares.h	(date 1604536359038)
+@@ -14,4 +14,7 @@
+ #endif //REUNIONESREMOTAS_AUXILIARES_H
+ 
+ // columnas
+-int columnas(toroide t);
+\ No newline at end of file
++int columnas(toroide t);
++
++// enRango
++bool enRango(int i, vector<bool> s);
+\ No newline at end of file
