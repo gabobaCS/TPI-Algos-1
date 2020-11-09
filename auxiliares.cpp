@@ -16,6 +16,7 @@ vector<posicion> ordenar(vector<posicion> &v) {
 }
 
 int columnas(toroide t){
+    //Dado un posible toroide t, devuelve la cantidad de columnas de t, salvando el caso en que el toroide no tiene columnas.
     return (t.size() > 0? t[0].size() : 0);
 }
 
@@ -78,7 +79,7 @@ vector<int> ticksHastaMorir(vector<toroide> ts){
 }
 
 bool esTraslacion(toroide const &t, toroide const &u, int y, int x){
-    //Que dados dos toroides me diga si uno es la traslacion en x,y del otro.
+    //Dados dos toroides t, u, me indica si t es la traslacion en x,y de u.
     bool res = true;
     for (int i = 0; i < t.size(); i++){
         for (int j = 0; j < t[0].size(); j++){
@@ -90,6 +91,7 @@ bool esTraslacion(toroide const &t, toroide const &u, int y, int x){
 }
 
 toroide hacerTraslacion(toroide t, int y, int x){
+    //Dado un toroide t, devuelve el toroide resultante de trasladarlo en y hacia abajo, x hacia la derecha.
     toroide trasladado = t;
     for (int i = 0; i < t.size(); i++){
         for (int j = 0; j < t[0].size(); j++){
@@ -100,6 +102,8 @@ toroide hacerTraslacion(toroide t, int y, int x){
 }
 
 toroide hacerSubrect(toroide t, int y1, int y2, int x1, int x2){
+    //Dado un toroide y dos coordenadas, devuelve el rectangulo contenido entre dichas coordenadas.
+    //Las coordenadas se asumen en rango.
     toroide subrect;
     for (int i = y1; i <= y2; i++){
         vector<bool> fila;
@@ -112,6 +116,7 @@ toroide hacerSubrect(toroide t, int y1, int y2, int x1, int x2){
 }
 
 vector<toroide> todosLosSubrect(toroide t){
+    //Dado un toroide, devuelve una secuencia de todos los posibles subrectangulos del toroide.
     vector<toroide> subrects;
        for(int y1 = 0; y1 < t.size(); y1++){
            for(int y2 = 0; y2 < t.size(); y2++){
@@ -127,7 +132,7 @@ vector<toroide> todosLosSubrect(toroide t){
 }
 
 vector<toroide> subrectsConVivas(vector<toroide> ts, toroide t){
-    //Genera una secuencia que posee unicamente aquellos subrectangulos que poseen todas las celdas vivas del toroide.
+    //Dada una lista de subrectangulos de un toroide, genera una nueva secuencia que posee unicamente aquellos subrectangulos con una cantidad de posiciones vivas igual a la del toroide t.
     vector<toroide> nuevaLista;
     for (int i = 0; i < ts.size(); i++){
         int vivas = posicionesVivas(ts[i]).size();
@@ -138,10 +143,12 @@ vector<toroide> subrectsConVivas(vector<toroide> ts, toroide t){
 }
 
 int areaToroide(toroide t){
+    //Devuelve el area de un toroide dado.
     return t.size()*t[0].size();
 }
 
 int minimaArea(vector<toroide> ts){
+    //Dada una secuencia de toroides, devuelve el menor area de los toroides en la secuencia. Asume una secuencia no vacia de entrada.
     int min = areaToroide(ts[0]);
     for (int i = 0; i < ts.size(); i++){
         if (areaToroide(ts[i]) < min)
