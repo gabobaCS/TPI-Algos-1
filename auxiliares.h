@@ -31,14 +31,6 @@ bool esTraslacion(toroide const &t, toroide const &u, int x, int y);
 
 toroide hacerTraslacion(toroide t, int y, int x);
 
-int cantidadDeVivas(toroide t);
-
-void imprimirToroide(toroide t);
-
-toroide extraerRect(toroide t, int y1, int y2, int x1, int x2);
-
-void imprimirTodosLosRect(toroide t);
-
 toroide hacerSubrect(toroide t, int y1, int y2, int x1, int x2);
 
 vector<toroide> todosLosSubrect(toroide t);

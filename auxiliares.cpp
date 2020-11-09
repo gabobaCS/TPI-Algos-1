@@ -90,17 +90,6 @@ bool esTraslacion(toroide const &t, toroide const &u, int y, int x){
     return res;
 }
 
-void imprimirToroide(toroide t){
-    for (int i = 0; i < t.size(); i++){
-        for (int j = 0; j < t[0].size(); j++){
-            cout << t[i][j] << " ";
-        }
-        // Newline for new row
-        cout << endl;
-    }
-    cout << endl;
-}
-
 toroide hacerTraslacion(toroide t, int y, int x){
     toroide trasladado = t;
     for (int i = 0; i < t.size(); i++){
