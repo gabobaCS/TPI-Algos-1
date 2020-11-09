@@ -43,7 +43,7 @@ TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
     EXPECT_EQ(res, 0);
 }
 
-TEST(seleccionNaturalTEST, case3){
+TEST(seleccionNaturalTEST, tresDistintos){
     toroide t1 = {
             {false, false, false, false, false},
             {false, false, false, false, false},

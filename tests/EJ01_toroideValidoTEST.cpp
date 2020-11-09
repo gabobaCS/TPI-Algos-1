@@ -21,3 +21,21 @@ TEST(toroideValidoTEST, diagonalTresPorTres) {
     };
     EXPECT_TRUE(toroideValido(t));
 }
+
+TEST(toroideValidoTEST, toroideVacio5Columnas){
+    vector<bool> vacio;
+    toroide t = { {vacio}, {vacio}, {vacio}, {vacio}, {vacio} };
+    EXPECT_FALSE(toroideValido(t));
+}
+
+TEST(toroideValidoTEST, toroide5Columnas){
+    vector<bool> vacio;
+    toroide t = { {false}, {false}, {false}, {false}, {false} };
+    EXPECT_FALSE(toroideValido(t));
+}
+
+TEST(toroideValidoTEST, toroide5Filas){
+    vector<bool> vacio;
+    toroide t = { {false, true, true, true, true} };
+    EXPECT_FALSE(toroideValido(t));
+}

@@ -24,11 +24,11 @@ bool esRectangulo(toroide t){
     for (int i = 0; i < t.size(); i++){
         if (t[0].size() != t[i].size()) res = false;
     }
-    return (t.size() > 0 && columnas(t) > 0 && res);
+    return (res);
 }
 
-bool esToroide(toroide t){
-    return esRectangulo(t) && t.size()>=3 && columnas(t)>=3;
+bool esToroide(toroide t) {
+    return esRectangulo(t) && t.size() >= 3 && columnas(t) >= 3;
 }
 
 int modulo(int n, int m){
@@ -40,11 +40,11 @@ int modulo(int n, int m){
     return n;
 }
 
-int vecinosVivos(toroide t, int f, int c){
+int vecinosVivos(toroide t, int f, int c) {
     int cantidad = 0;
-    for (int i = -1; i<=1; i++){
-        for (int j = -1; j<=1; j++){
-            if (!(i == 0 && j == 0) && t[modulo((f+i), t.size())][modulo((c+j), columnas(t))]){
+    for (int i = -1; i <= 1; i++) {
+        for (int j = -1; j <= 1; j++) {
+            if (!(i == 0 && j == 0) && t[modulo((f + i), t.size())][modulo((c + j), columnas(t))]) {
                 cantidad++;
             }
         }
@@ -66,7 +66,6 @@ bool esToroideMuerto(toroide t){
 vector<int> ticksHastaMorir(vector<toroide> ts){
     vector<int> seqTicks;
     int cantTicks = 0;
-    int p; // sin esto no puedo usar la funcion esPeriodico
     for (int i = 0; i < ts.size(); i++){
         while (!esToroideMuerto(ts[i])){
             evolucionToroide(ts[i]);

@@ -19,3 +19,13 @@ TEST(posicionesVivasTEST, toroideDiagonalVivas){
     EXPECT_EQ(ordenar(vivas), ordenar(res));
 }
 
+TEST(posicionesVivasTEST, ningunaViva){
+    toroide t = { {false, false, false, false, false, false},
+                  {false, false, false, false, false, false},
+                  {false, false, false, false, false, false},
+                  {false, false, false, false, false, false} };
+
+    vector<posicion> vivas = {};
+    vector<posicion> res = posicionesVivas(t);
+    EXPECT_EQ(ordenar(vivas), ordenar(res));
+}
