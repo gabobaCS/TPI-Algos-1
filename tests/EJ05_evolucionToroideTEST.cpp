@@ -18,3 +18,18 @@ TEST(evolucionToroideTEST, toroideDiagonalTresPorTresUnPaso){
     evolucionToroide(t);
     EXPECT_EQ(t, evo_t);
 }
+TEST(evolucionToroideTEST, todosMuertos){
+    toroide t = { {false, false, false}, {false, false, false}, {false, false, false} };
+    toroide evo_t = { {false, false, false}, {false, false, false}, {false, false, false} };
+
+    evolucionToroide(t);
+    EXPECT_EQ(t, evo_t);
+}
+TEST(evolucionToroideTEST, todosVivos){
+    toroide t = { {true, true, true}, {true, true, true}, {true, true, true} };
+
+    toroide evo_t = { {false, false, false}, {false, false, false}, {false, false, false} };
+
+    evolucionToroide(t);
+    EXPECT_EQ(t, evo_t);
+}

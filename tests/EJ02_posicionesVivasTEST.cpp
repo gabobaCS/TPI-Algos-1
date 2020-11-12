@@ -6,7 +6,7 @@
 using namespace std;
 
 TEST(posicionesVivasTEST, toroideDiagonalVivas){
-    toroide t = { 
+    toroide t = {
 	{true, false, false},
 	{false, true, false},
 	{false, false, true},

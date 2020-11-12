@@ -21,7 +21,7 @@ vector<posicion> posicionesVivas(toroide const &t) {
 
 // EJERCICIO 3
 float densidadPoblacion(toroide const &t) {
-	float resp = posicionesVivas(t).size()/(t[0].size()*t.size());
+	float resp = (float)posicionesVivas(t).size()/(t[0].size()*t.size());
     return resp;
 }
 
@@ -78,13 +78,15 @@ bool esPeriodico(toroide const &t, int &p) {
 bool primosLejanos(toroide const &t, toroide const &u) {
 	bool resp = false;
     int k = 1;
-	bool ningunoEsPeriodico = evolucionMultiple(t, k) != t && evolucionMultiple(u, k) != u;
-	bool ningunoMuere = !esToroideMuerto(evolucionMultiple(t, k)) && !esToroideMuerto(evolucionMultiple(u, k));
-    while(ningunoEsPeriodico && ningunoMuere && !resp){
-        if (evolucionMultiple(t, k) == t || evolucionMultiple(u, k) == u){
+    toroide evolucionT = evolucionMultiple(t, k);
+    toroide evolucionU = evolucionMultiple(u, k);
+    while(  !resp && evolucionT != t && evolucionU != u && !esToroideMuerto(evolucionT) && !esToroideMuerto(evolucionU)){
+        if (evolucionMultiple(t, k) == u || evolucionMultiple(u, k) == t){
             resp = true;
         } else {
             k++;
+            evolucionT = evolucionMultiple(t, k);
+            evolucionU = evolucionMultiple(u, k);
         }
     }
     return resp;
